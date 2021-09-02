@@ -1,0 +1,35 @@
+import React from 'react'
+import { View } from 'react-native' 
+import Svg, {
+  Circle,
+  Ellipse,
+  G,
+  TSpan,
+  TextPath,
+  Path,
+  Polygon,
+  Polyline,
+  Line,
+  Rect,
+  Use,
+  Image,
+  Symbol,
+  Defs,
+  LinearGradient,
+  RadialGradient,
+  Stop,
+  ClipPath,
+  Pattern,
+  Mask,
+} from 'react-native-svg'
+
+export default ({ style={}, colorFill="#FFFFFF" }) => (
+  <View style={style}>
+    <Svg width="100%" height="100%" viewBox="0 0 37 37">
+      <Path 
+        fillRule="evenodd" clipRule="evenodd" 
+        d="M18.4999 0C12.2287 0 9.09314 4.38983 9.09314 4.38983V7.52542L4.70331 11.9153L7.21178 14.4237H7.21191V14.4237H9.09314V16.9322H10.9745V19.4407H9.09314V23.2034H13.483V28.8475H4.07619C1.99807 28.8475 0.313477 30.5321 0.313477 32.6102V37L17.2458 37H19.7543L36.6864 37V32.6102C36.6864 30.5321 35.0018 28.8475 32.9237 28.8475H23.5169V23.2034C23.5169 23.2034 30.4152 16.9322 30.4152 10.661C30.4152 3.21651 24.2784 0.0701014 18.6825 0.00323486L18.6825 0.00321398C18.6579 0.00289733 18.6333 0.00231207 18.6087 0.00172687C18.5724 0.000863364 18.5361 0 18.4999 0ZM19.7543 37V11.2881H9.09327L7.21191 13.1695V14.4237H9.09314V14.4237H9.09327L9.72039 13.7966H17.2458V20.0678L14.1102 16.9322H10.9746V19.4407H12.856L17.2458 23.8305V37L18.7913 37L19.7543 37Z" 
+        fill={colorFill}/>
+    </Svg>
+  </View>
+);

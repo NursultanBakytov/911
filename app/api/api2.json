@@ -1,0 +1,1026 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-11-13T17:39:08.012Z",
+  "__export_source": "insomnia.desktop.app:v2020.4.2",
+  "resources": [
+    {
+      "_id": "req_f3e56131aace4ca78c7dd1d31954b519",
+      "parentId": "fld_112342e6f3274a4ca78805c6ab059895",
+      "modified": 1605288487811,
+      "created": 1566404739583,
+      "url": "{{domain}}/api/2/issues/subscriber",
+      "name": "/ - create issue by tourist описание",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_9f9aeeb98c6f406d8e370e26c7bc7825",
+            "name": "danger_type",
+            "value": "fire/criminal/ambulance/gas/sos"
+          },
+          {
+            "disabled": false,
+            "id": "pair_3574ce97a1a64938ad44ca0cae95171b",
+            "name": "mode",
+            "value": "default/quite/call"
+          },
+          {
+            "disabled": true,
+            "fileName": "/home/user/Music/file_example_MP3_700KB.mp3",
+            "id": "pair_ab07027285b4481b8531262eb66c6755",
+            "name": "audio",
+            "type": "file",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "fileName": "/home/user/Pictures/images.jpeg",
+            "id": "pair_8db211379eee4feeb9fa7621bff04c6b",
+            "name": "photo[0]",
+            "type": "file",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "fileName": "/home/user/Pictures/photo_2019-11-19_21-51-39.jpg",
+            "id": "pair_ced831a710c24c5a89c4087118cede59",
+            "name": "photo[1]",
+            "type": "file",
+            "value": ""
+          },
+          {
+            "id": "pair_7ab7e3230e764887b79fdef8be402ea7",
+            "name": "latitude",
+            "value": "50.839678"
+          },
+          {
+            "id": "pair_40abffc1ab8f446d82267f244612ae7a",
+            "name": "longitude",
+            "value": "23.029709"
+          },
+          {
+            "name": "accuracy",
+            "value": "точность координат в метрах",
+            "description": "",
+            "id": "pair_f0b259bee698400ba56edc62fc751dab"
+          },
+          {
+            "disabled": false,
+            "id": "pair_587db3bd71e84dd7aea66b0e8e7deea8",
+            "name": "description",
+            "value": "TEST!"
+          },
+          {
+            "name": "pending_request",
+            "value": "запрос был отравлен в момент отсуствия интернета",
+            "description": "",
+            "id": "pair_f165105e5fae4f90b25fccdad617779c",
+            "disabled": false
+          },
+          {
+            "name": "time_offset",
+            "value": "время в секундах с момента отравки запроса до момента подключения к интернету",
+            "description": "",
+            "id": "pair_ccda11fe65444a44ba3a3190c81af242",
+            "type": "text",
+            "multiline": false
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_a93f1ee25ccf4db298593ead30608372",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        },
+        {
+          "id": "pair_9d38b2876c0a47b080f8dc696c130fc4",
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {
+        "accessTokenUrl": "{{ domain }}/api/oauth/token",
+        "clientId": "{{ client  }}",
+        "clientSecret": "{{ token }}",
+        "grantType": "password",
+        "password": "{{ password }}",
+        "type": "oauth2",
+        "username": "{{ username }}"
+      },
+      "metaSortKey": -1568115838644,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_112342e6f3274a4ca78805c6ab059895",
+      "parentId": "wrk_69ce5df5a2d04c0788359d5c041b7cfc",
+      "modified": 1568103481450,
+      "created": 1568103481450,
+      "name": "112",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1568103481450,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_69ce5df5a2d04c0788359d5c041b7cfc",
+      "parentId": null,
+      "modified": 1544792800919,
+      "created": 1544792800919,
+      "name": "Insomnia",
+      "description": "",
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_94f31f2fdea7459ba35dce0f41ad567d",
+      "parentId": "fld_112342e6f3274a4ca78805c6ab059895",
+      "modified": 1605288275832,
+      "created": 1605287927546,
+      "url": "{{domain}}/api/2/issues/subscriber",
+      "name": "/ - create issue by tourist",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "id": "pair_9f9aeeb98c6f406d8e370e26c7bc7825",
+            "name": "danger_type",
+            "value": "fire"
+          },
+          {
+            "disabled": false,
+            "id": "pair_3574ce97a1a64938ad44ca0cae95171b",
+            "name": "mode",
+            "value": "call"
+          },
+          {
+            "disabled": true,
+            "fileName": "/home/user/Music/file_example_MP3_700KB.mp3",
+            "id": "pair_ab07027285b4481b8531262eb66c6755",
+            "name": "audio",
+            "type": "file",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "fileName": "/home/user/Pictures/images.jpeg",
+            "id": "pair_8db211379eee4feeb9fa7621bff04c6b",
+            "name": "photo[0]",
+            "type": "file",
+            "value": ""
+          },
+          {
+            "disabled": true,
+            "fileName": "/home/user/Pictures/photo_2019-11-19_21-51-39.jpg",
+            "id": "pair_ced831a710c24c5a89c4087118cede59",
+            "name": "photo[1]",
+            "type": "file",
+            "value": ""
+          },
+          {
+            "id": "pair_7ab7e3230e764887b79fdef8be402ea7",
+            "name": "latitude",
+            "value": "50.839678"
+          },
+          {
+            "id": "pair_40abffc1ab8f446d82267f244612ae7a",
+            "name": "longitude",
+            "value": "23.029709"
+          },
+          {
+            "name": "accuracy",
+            "value": "500",
+            "description": "",
+            "id": "pair_f0b259bee698400ba56edc62fc751dab"
+          },
+          {
+            "disabled": false,
+            "id": "pair_587db3bd71e84dd7aea66b0e8e7deea8",
+            "name": "description",
+            "value": "TEST!"
+          },
+          {
+            "name": "pending_request",
+            "value": "true",
+            "description": "",
+            "id": "pair_f165105e5fae4f90b25fccdad617779c"
+          },
+          {
+            "name": "time_offset",
+            "value": "5000",
+            "description": "",
+            "id": "pair_ccda11fe65444a44ba3a3190c81af242"
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_a93f1ee25ccf4db298593ead30608372",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        },
+        {
+          "id": "pair_9d38b2876c0a47b080f8dc696c130fc4",
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {
+        "accessTokenUrl": "{{ domain }}/api/oauth/token",
+        "clientId": "{{ client  }}",
+        "clientSecret": "{{ token }}",
+        "grantType": "password",
+        "password": "{{ password }}",
+        "type": "oauth2",
+        "username": "{{ username }}"
+      },
+      "metaSortKey": -1568115838631.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4ba2e53fb6a24a42ab09dedeb1f5691a",
+      "parentId": "fld_112342e6f3274a4ca78805c6ab059895",
+      "modified": 1605288531833,
+      "created": 1576254348293,
+      "url": "{{domain}}/api/2/issues/subscriber/1540",
+      "name": "/{issue} - update issue",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"status\": \"canceled_by_tourist\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_8644ab3461934d8fb3d53456d971bb3f",
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "id": "pair_9d38b2876c0a47b080f8dc696c130fc4",
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {
+        "accessTokenUrl": "{{ access_url  }}",
+        "clientId": "{{ client  }}",
+        "clientSecret": "{{ token }}",
+        "grantType": "password",
+        "password": "{{ password }}",
+        "type": "oauth2",
+        "username": "{{ username }}"
+      },
+      "metaSortKey": -1568115838619,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b8889854f9c54db4976e487782c6cd7c",
+      "parentId": "fld_112342e6f3274a4ca78805c6ab059895",
+      "modified": 1605288731769,
+      "created": 1566984636557,
+      "url": "{{domain}}/api/2/issues",
+      "name": "/ - get all issues",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_9d38b2876c0a47b080f8dc696c130fc4",
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {
+        "accessTokenUrl": "{{ access_url  }}",
+        "clientId": "{{ client  }}",
+        "clientSecret": "{{ token }}",
+        "grantType": "password",
+        "password": "{{ password }}",
+        "type": "oauth2",
+        "username": "{{ username }}"
+      },
+      "metaSortKey": -1568115838606.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_22e9e7c5eabb4d50a3a3663f8f73ccca",
+      "parentId": "fld_112342e6f3274a4ca78805c6ab059895",
+      "modified": 1605288735272,
+      "created": 1566404801967,
+      "url": "{{domain}}/api/2/issues/1539",
+      "name": "/{issue} - get issue by id",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_8644ab3461934d8fb3d53456d971bb3f",
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "id": "pair_9d38b2876c0a47b080f8dc696c130fc4",
+          "name": "Accept",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {
+        "accessTokenUrl": "{{ access_url  }}",
+        "clientId": "{{ client  }}",
+        "clientSecret": "{{ token }}",
+        "grantType": "password",
+        "password": "{{ password }}",
+        "type": "oauth2",
+        "username": "{{ username }}"
+      },
+      "metaSortKey": -1568115838600.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_195d582d58254dedb0bfb7bf58f8bc50",
+      "parentId": "fld_112342e6f3274a4ca78805c6ab059895",
+      "modified": 1605288742215,
+      "created": 1568117045106,
+      "url": "{{ domain  }}/api/events",
+      "name": "/ - get all events",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"latitude\": null,\n\t\"longitude\": null,\n\t\"region_id\": null\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_618ae8044cec45948c3b1463b910f5ad",
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "id": "pair_5d4871a5d94c41e5a3ac6135e1ae1f7f",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {
+        "accessTokenUrl": "{{ access_url  }}",
+        "clientId": "{{ client  }}",
+        "clientSecret": "{{ token  }}",
+        "grantType": "password",
+        "password": "{{ password  }}",
+        "type": "oauth2",
+        "username": "{{ username  }}"
+      },
+      "metaSortKey": -1568115838597.125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_5c50543cd0b94fb7a547963708247862",
+      "parentId": "wrk_69ce5df5a2d04c0788359d5c041b7cfc",
+      "modified": 1567688715329,
+      "created": 1544792800978,
+      "name": "New Environment",
+      "data": {},
+      "dataPropertyOrder": {},
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1544792800978,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_4e65ecee74be428090c787bd696d01f1",
+      "parentId": "wrk_69ce5df5a2d04c0788359d5c041b7cfc",
+      "modified": 1605289013341,
+      "created": 1544792800981,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "key": "laravel_session",
+          "value": "eyJpdiI6IkhuYmlXVnJCMks0VHFYNWJpbVd6UXc9PSIsInZhbHVlIjoiWG9KZkFWRytZUitNVjdVU3N6XC9UclwvZE50M01JYmtYOGhsOUhrOEZ3NThoMktMS2xTd3M5VjluNnZxR1JOeXd2IiwibWFjIjoiNDllZjA0YzUwMWRkOWQ1OGRiNTM2N2VkYmFhMzNmYmJkYjRjMTUzMTE1NDg1ODIwOGI1NzY1ODJjMmMyN2FiMCJ9",
+          "expires": "2019-09-02T13:07:57.000Z",
+          "maxAge": 7200,
+          "domain": "localhost",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2018-12-17T11:03:08.833Z",
+          "lastAccessed": "2019-09-02T11:07:57.305Z",
+          "id": "6031171189227673"
+        },
+        {
+          "key": "laravel_session",
+          "value": "eyJpdiI6ImtBM253QlFNTEV4YjRkZjdRSmVmSHc9PSIsInZhbHVlIjoiUTN2UlhcL0JubGtKVGJpM0E4THk3TnhhcFVZRHEwTEd0a3I3RGVsZ1VuTVJvd1NnVE9WYzNuaXR3MkFRbnBLMGIiLCJtYWMiOiIyMjYzNGM5ODhlNjQ1ZDVlNzE0MWUyZjJiYjVjYmFhZDhmODczMjBjZDc3N2IwMTljN2U5NjIyMTY3NmIyODAwIn0%3D",
+          "expires": "2019-04-22T14:24:12.000Z",
+          "maxAge": 7200,
+          "domain": "112api.makeit.technology",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2018-12-26T16:25:59.612Z",
+          "lastAccessed": "2019-04-22T12:24:12.482Z",
+          "id": "8911651455936271"
+        },
+        {
+          "key": "__cfduid",
+          "value": "d684a78097a202d657b8f9078165468871545901813",
+          "expires": "2019-12-27T09:10:13.000Z",
+          "domain": "directfuneral.app",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": false,
+          "creation": "2018-12-27T09:10:14.704Z",
+          "lastAccessed": "2018-12-27T09:10:14.704Z",
+          "id": "34989215798159523"
+        },
+        {
+          "key": "XSRF-TOKEN",
+          "value": "eyJpdiI6Iko5SXNiSnV1SHpXMnZSXC9laVQ1NzF3PT0iLCJ2YWx1ZSI6Im5ST01Bd0VMOUxIdGhjNDVoUTI1M3pGU3drXC8yVlZcL3ZTOFU2UXVWOUFDTUZzakRiK1hBd2d6NVZlZ3B5b2NqaiIsIm1hYyI6IjEzNDUxYjBhYjBmNjg4N2E4M2FiNzlhZDcxNTQyNzllZTliYTA5NGJlZDcwMzgwMTFhYTdmY2UzNTMyZDM0OTAifQ%3D%3D",
+          "expires": "2018-12-27T11:52:37.000Z",
+          "maxAge": 7200,
+          "domain": "up.makeit.technology",
+          "path": "/",
+          "hostOnly": true,
+          "creation": "2018-12-27T09:52:18.526Z",
+          "lastAccessed": "2018-12-27T09:52:37.764Z",
+          "id": "2088515203340342"
+        },
+        {
+          "key": "upwork_feed_session",
+          "value": "eyJpdiI6IlphK0lYbUgrSjgwK2VDOW92NUJJXC9BPT0iLCJ2YWx1ZSI6IkRvT0QxXC94MjRRbVd1UGt5RDdKNE9iN3JcL1J1eFRIK1VPenFlTEpHXC8zVGx6VE1laTRlYVVURnBrV3U4YysrZWciLCJtYWMiOiI2MGJlODY1MTA4ZDY2MDdiNDMyN2QyYTMyMDVjZmZlNmU5OTA4MTVjODQ3MzJmNWNiNTQ3MDI0NWIxMTgwZDEwIn0%3D",
+          "expires": "2018-12-27T11:52:37.000Z",
+          "maxAge": 7200,
+          "domain": "up.makeit.technology",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2018-12-27T09:52:18.527Z",
+          "lastAccessed": "2018-12-27T09:52:37.764Z",
+          "id": "03666858632443781"
+        },
+        {
+          "key": "laravel_session",
+          "value": "eyJpdiI6IjUwWVZIc0tvNmNSUVV0U21zYUlUQlE9PSIsInZhbHVlIjoiZVwveUZ6dG1KclFuZ0wwRkJmRUJHZUEyblQzT2F6QkhpOW0xUnNWNXF2OHNvelpZZDZ0UTFLMHJzNGJOR3g4YXoiLCJtYWMiOiIzOTM5NGI1NjczMDEzMDBhMmEwZmFkY2EyODZhNjk0ZWE3YjI4ZGJkOWRhYjMxZjg2YmI4NWY5YzFjMGVkZWQwIn0%3D",
+          "expires": "2018-12-27T12:23:50.000Z",
+          "maxAge": 7200,
+          "domain": "testcors.makeit.technology",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2018-12-27T10:13:24.627Z",
+          "lastAccessed": "2018-12-27T10:23:50.560Z",
+          "id": "41608504511672684"
+        },
+        {
+          "key": "XSRF-TOKEN",
+          "value": "eyJpdiI6IlV2dzVRQ1U3dmxDeWl6cUIrY2pnUVE9PSIsInZhbHVlIjoiaEFpNXFJUHFiK0pabnJPMDNLY25wM09WNGZ1TzdjVjl6NGhoUGNTeFJqXC9nY2tUMGF4cjU0M1A3bFhndFU1VHgiLCJtYWMiOiJmNjM0MmU4NTFmMDg2Y2VmOTQ0N2JhMDRlODJlNzc0ZWYzOGQ3Zjk3YWFiZGE5YjUzN2U3MmZmOTYyZDc0YzFiIn0%3D",
+          "expires": "2019-02-20T12:49:22.000Z",
+          "maxAge": 7200,
+          "domain": "cms.moebelland.de",
+          "path": "/",
+          "hostOnly": true,
+          "creation": "2019-02-20T09:18:42.661Z",
+          "lastAccessed": "2019-02-20T10:49:23.113Z",
+          "id": "8106345741000411"
+        },
+        {
+          "key": "laravel_session",
+          "value": "eyJpdiI6IjY5K1NXUXdRUTEzT0hVb2Z2REQ1Q2c9PSIsInZhbHVlIjoiY2g1QjExd3U4c3EzZmlGXC9rOEtwR0hEdHNZSVpNK05MRVNRakR5alNOUWJiY05lN250QWNsXC9VWXp1aDg1dEZ5IiwibWFjIjoiNDVkNDUyMTg1MjcyYzVkNzNhMWY0NTg3ZjM2MTE0ZjFmYTkxNDlmMWY5NzgzM2VkNmVmZjVmZDc4YWVhODk0MSJ9",
+          "expires": "2019-02-20T12:49:22.000Z",
+          "maxAge": 7200,
+          "domain": "cms.moebelland.de",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2019-02-20T09:18:42.662Z",
+          "lastAccessed": "2019-02-20T10:49:23.113Z",
+          "id": "943273345232668"
+        },
+        {
+          "key": "laravel_session",
+          "value": "eyJpdiI6InJucTJWUXVrXC9oTmt3TkpPWDA4Sk1nPT0iLCJ2YWx1ZSI6IjI5RjAxSU1zcmZRQVJ4S3IrTW1JTHpXTm9HekRhWXdJMzYxWFBDTGJBWFlibkFSZHlTbEdMS3BrRUJDMXVHUVkiLCJtYWMiOiIyNDQ1N2UyM2Y0ZDNlNTdmNGE1NjgyZDAyOTRhZGMyYmUwMzcyNTQ3YjcwMzZhZDUwNTFjYjU0MjVkZmYwYWRhIn0%3D",
+          "expires": "2019-11-15T10:15:38.000Z",
+          "maxAge": 7200,
+          "domain": "api.accessibility.com.ua",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2019-05-10T09:02:43.250Z",
+          "lastAccessed": "2019-11-15T08:15:38.755Z",
+          "id": "26179844046922285"
+        },
+        {
+          "key": "laravel_session",
+          "value": "eyJpdiI6ImZaM1hTU0V6cGRvOGxtK1h4QzdtZ1E9PSIsInZhbHVlIjoiY0ZqN3VpbXJTclY5OExqd0l0YnVaNWEyclF3aU44cGdnMjVadWhlcXp5OGZnVU1uT1wvMlUrY3JSMUxpbWRuVXMiLCJtYWMiOiI1OGYwMzhmYmMzNjk2YTI1YjRjNmZmOWJhYmViZjA0ODUzNjRkYTRmMTNjNmE2ZDNiOWE2NzAyMDUxNTYxYmQ2In0%3D",
+          "expires": "2019-10-22T14:02:35.000Z",
+          "maxAge": 7200,
+          "domain": "www.facebook.com",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2019-05-17T08:41:10.133Z",
+          "lastAccessed": "2019-10-22T12:02:35.871Z",
+          "id": "8573720944177812"
+        },
+        {
+          "key": "fr",
+          "value": "1GfEqSBB8u7xdO9mF..BdXQiK._8.AAA.0.0.Bdru_b.AWWkaDRq",
+          "expires": "2020-01-20T12:02:34.000Z",
+          "maxAge": 7775999,
+          "domain": "facebook.com",
+          "path": "/",
+          "secure": true,
+          "httpOnly": true,
+          "hostOnly": false,
+          "creation": "2019-05-17T08:41:10.133Z",
+          "lastAccessed": "2019-10-22T12:02:35.872Z",
+          "id": "8069736170220561"
+        },
+        {
+          "key": "sb",
+          "value": "pXPeXDKO8fcXgN2i4mr4XKfT",
+          "expires": "2021-05-16T08:41:09.000Z",
+          "maxAge": 63072000,
+          "domain": "facebook.com",
+          "path": "/",
+          "secure": true,
+          "httpOnly": true,
+          "hostOnly": false,
+          "creation": "2019-05-17T08:41:10.134Z",
+          "lastAccessed": "2019-05-17T08:41:10.134Z",
+          "id": "9158694742346771"
+        },
+        {
+          "key": "laravel_session",
+          "value": "eyJpdiI6Inl0YUlIb0xpN2o5Q3JUVU1mWUFObEE9PSIsInZhbHVlIjoid1RadDNVMkZ2aUpuMDRCNkc4c2lwNVwvTm1KMHA2SnBmRjFFcFV6bUJUSkVuNmNaZE1haSt4dGxSSHFpb2xiMnoiLCJtYWMiOiIxMjk5ZmI1YWVlOWU3MDRhMDc2ZjkwYzg4Yzk4YzkxOTk2YjI1ZjhiY2Y2MzY0NTg5ODE4YTJmZTlmNmMwOWQ0In0%3D",
+          "expires": "2019-08-20T11:47:14.000Z",
+          "maxAge": 7200,
+          "domain": "112.makeit.technology",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2019-08-19T15:22:47.007Z",
+          "lastAccessed": "2019-08-20T09:47:14.345Z",
+          "id": "7771485904533992"
+        },
+        {
+          "key": "laravel_session",
+          "value": "deleted",
+          "expires": "1970-01-01T00:00:01.000Z",
+          "maxAge": -1568011684,
+          "domain": "facebook.com",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": false,
+          "creation": "2019-08-21T09:02:10.106Z",
+          "lastAccessed": "2019-09-09T06:48:05.954Z",
+          "id": "5976780306157616"
+        },
+        {
+          "key": "laravel_session",
+          "value": "eyJpdiI6Ijhlemt1TXZyb1FEVVNpRzN1NTNlWlE9PSIsInZhbHVlIjoiQXl5WlF0OWFIVG12dlwvam9nb1hUQ2FLSGdmTkRvOEoyejhBQUZyZGsyZHdNSW9NXC9NUjF4SFhmcCtkZW9LQkZCIiwibWFjIjoiNmI4ZDRhM2FhZDIzZDZiYWIzMDljNmJjNWExN2FmNmZjYTQ4ZTk4MmEyMDk5NmE2YzFhMmRmNmMwY2FiNDFkNyJ9",
+          "expires": "2019-12-17T12:28:04.000Z",
+          "maxAge": 7200,
+          "domain": "112ua.io",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": false,
+          "creation": "2019-09-02T11:22:28.529Z",
+          "lastAccessed": "2019-12-17T10:28:04.169Z",
+          "id": "7674787768829265"
+        },
+        {
+          "key": "laravel_session",
+          "value": "eyJpdiI6IlRPa2tucEFsZVF4XC9HM1pMYTZ5cWp3PT0iLCJ2YWx1ZSI6Im1hdUtXdDFJSVQwMk1BakphMlwvS28zMHBSYXpkcnNNUDNXRnBVcFwvXC83N0FIOEdcL3YrcUYrZmUxVlVyeTZQNGJxIiwibWFjIjoiY2E0ZDVmODYwYjE1YTMyNzUxYTBmYWE4MTBiNmViM2M4ZWY3ZjAxODY4Nzk3NjlkOWM2NGY5YTIyYjM0Zjk5MyJ9",
+          "expires": "2019-09-19T09:47:41.000Z",
+          "maxAge": 7200,
+          "domain": "192.168.0.105",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2019-09-19T07:29:26.173Z",
+          "lastAccessed": "2019-09-19T07:47:41.871Z",
+          "id": "46603836594741566"
+        },
+        {
+          "key": "laravel_session",
+          "value": "eyJpdiI6IjdsU0VFaTgyRlNXeUlQalF2aTNxQ2c9PSIsInZhbHVlIjoiWkJPa2E3VGdlVUp6UmNORnpiaEh1SndOSVMxYWxieEVwd1FEaW5QZjI4aVB2anpxZE9KQXI2T2Y4Mnk0SUc1USIsIm1hYyI6IjgyMmQxNzI5MmNmOWMzZjgwMzAxZDZkZjJmZWE4ZjExNjc1ZTNkZmEyMTUxOTU0MTgwY2QzZTgxNDVhYzY0NGQifQ%3D%3D",
+          "expires": "2019-12-08T14:00:58.000Z",
+          "maxAge": 7200,
+          "domain": "api.112ua.io",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2019-09-23T09:22:09.825Z",
+          "lastAccessed": "2019-12-08T12:00:58.978Z",
+          "id": "6490268805388182"
+        },
+        {
+          "key": "112ua_session",
+          "value": "eyJpdiI6IkdMUWVSTFlPUE8xZlUwendTUDFINmc9PSIsInZhbHVlIjoiTmlLQzQ5UmZ0MDVLTmlIclZNZFVWQ3Jnb2RTeHV1bEdDQ2FvVjlyWUE4OW9odE1MUGJPTU1PM294azFyWmxPVSIsIm1hYyI6ImI0MjZjNWQyYzIzNjgwODU4MzQ1ZTVkYjRiODkwYzllNzViOTY3YjAwOGJhZjE4MGY1NTZhNjk4OWZlMmU4NDUifQ%3D%3D",
+          "expires": "2019-12-16T17:43:41.000Z",
+          "maxAge": 7200,
+          "domain": "api.accessibility.com.ua",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": false,
+          "creation": "2019-11-28T18:43:21.356Z",
+          "lastAccessed": "2019-12-16T15:43:41.613Z",
+          "id": "9681980790107236"
+        },
+        {
+          "key": "112ua_session",
+          "value": "eyJpdiI6IjhBbDFxakpYMmtcL1FNOUtcLzNwTHBoUT09IiwidmFsdWUiOiJPYzllVmtVUURrdlAwTVB5SHhMUThYcVRGWGdHQXJpS05nZ0Q3bEphSlVcL0xiQzltR2lWQmhyeWpUamE5WmJ6bSIsIm1hYyI6ImY1ZmNlNDc3ZGViZGU0YjQxMjljNjEzZTcyNGZiZDcyNTUyZjRmZDBlZWRmNTc1ZGQyNmVkMzFlNmI0MjM1ZDUifQ%3D%3D",
+          "expires": "2019-12-17T12:16:43.000Z",
+          "maxAge": 7200,
+          "domain": "accessibility.com.ua",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": false,
+          "creation": "2019-12-06T18:45:04.464Z",
+          "lastAccessed": "2019-12-17T10:16:43.275Z",
+          "id": "9549765165503168"
+        },
+        {
+          "key": "__cfduid",
+          "value": "d2037387224b1b17b4b0d284ce83d6e0e1576061641",
+          "expires": "2020-01-10T10:54:01.000Z",
+          "domain": "accessibility.com.ua",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": false,
+          "creation": "2019-12-11T10:54:01.868Z",
+          "lastAccessed": "2019-12-11T10:54:01.868Z",
+          "id": "8936128501687586"
+        },
+        {
+          "key": "laravel_session",
+          "value": "k8HCy27M9c36kT4vHdaEDjlDNQDh6JS6dWooz56e",
+          "expires": "2020-11-13T19:36:53.000Z",
+          "maxAge": 7200,
+          "domain": "dev.api.accessibility.com.ua",
+          "path": "/",
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2020-11-12T14:22:40.396Z",
+          "lastAccessed": "2020-11-13T17:36:53.340Z",
+          "id": "8095259515239899"
+        }
+      ],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_d1aecdebde7c4fb58bc653934e9af4f4",
+      "parentId": "wrk_69ce5df5a2d04c0788359d5c041b7cfc",
+      "modified": 1605190208641,
+      "created": 1605190208641,
+      "fileName": "Insomnia",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_b53763224b1745769fc135ea019ebeec",
+      "parentId": "env_5c50543cd0b94fb7a547963708247862",
+      "modified": 1576523868637,
+      "created": 1566465434016,
+      "name": "local tourist",
+      "data": {
+        "access_url": "http://api.112ua.io/api/oauth/token",
+        "client": 2,
+        "domain": "http://api.112ua.io",
+        "password": "aA123123123",
+        "token": "HgVocxGH4FINpaBv4vLg9A2e4LzyiGpN4GbS3Nyj",
+        "username": "tourist@gmail.com"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "domain",
+          "username",
+          "password",
+          "access_url",
+          "client",
+          "token"
+        ]
+      },
+      "color": "#57ff00",
+      "isPrivate": false,
+      "metaSortKey": 2,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_3954587f46ab4123b92ce5ff7456da79",
+      "parentId": "env_5c50543cd0b94fb7a547963708247862",
+      "modified": 1573813582883,
+      "created": 1567687390298,
+      "name": "production admin",
+      "data": {
+        "access_url": "https://api.accessibility.com.ua/api/oauth/token",
+        "client": 2,
+        "domain": "https://api.accessibility.com.ua",
+        "password": "aA123123123",
+        "token": "HgVocxGH4FINpaBv4vLg9A2e4LzyiGpN4GbS3Nyj",
+        "username": "lede@mail-desk.net"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "domain",
+          "username",
+          "password",
+          "access_url",
+          "client",
+          "token"
+        ]
+      },
+      "color": "#ff0000",
+      "isPrivate": false,
+      "metaSortKey": 3,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_81c20201c1f74714b10c4e18549aff2c",
+      "parentId": "env_5c50543cd0b94fb7a547963708247862",
+      "modified": 1576510798045,
+      "created": 1567688475054,
+      "name": "local admin",
+      "data": {
+        "access_url": "http://api.112ua.io/api/oauth/token",
+        "client": 2,
+        "domain": "http://api.112ua.io",
+        "password": "aA123123123",
+        "token": "HgVocxGH4FINpaBv4vLg9A2e4LzyiGpN4GbS3Nyj",
+        "username": "admin@gmail.com"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "domain",
+          "username",
+          "password",
+          "access_url",
+          "client",
+          "token"
+        ]
+      },
+      "color": "#ff0000",
+      "isPrivate": false,
+      "metaSortKey": 0,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_1ec0c03184534674b0d5fe9f55110f25",
+      "parentId": "env_5c50543cd0b94fb7a547963708247862",
+      "modified": 1573813582895,
+      "created": 1568802604435,
+      "name": "production tourist 1",
+      "data": {
+        "access_url": "https://api.accessibility.com.ua/api/oauth/token",
+        "client": 2,
+        "domain": "https://api.accessibility.com.ua",
+        "password": "aA123123123",
+        "token": "HgVocxGH4FINpaBv4vLg9A2e4LzyiGpN4GbS3Nyj",
+        "username": "taval@coin-host.net"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "domain",
+          "username",
+          "password",
+          "access_url",
+          "client",
+          "token"
+        ]
+      },
+      "color": "#ffee00",
+      "isPrivate": false,
+      "metaSortKey": 5,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_61c8a50a72ad4cfaa004fec525d96efe",
+      "parentId": "env_5c50543cd0b94fb7a547963708247862",
+      "modified": 1573813582897,
+      "created": 1568803503940,
+      "name": "production tourist 2",
+      "data": {
+        "access_url": "https://api.accessibility.com.ua/api/oauth/token",
+        "client": 2,
+        "domain": "https://api.accessibility.com.ua",
+        "password": "Test11",
+        "token": "HgVocxGH4FINpaBv4vLg9A2e4LzyiGpN4GbS3Nyj",
+        "username": "covago@dr-mail.net"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "domain",
+          "username",
+          "password",
+          "access_url",
+          "client",
+          "token"
+        ]
+      },
+      "color": "#ffee00",
+      "isPrivate": false,
+      "metaSortKey": 6,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_a35f86aa33bc41a095f275e514022622",
+      "parentId": "env_5c50543cd0b94fb7a547963708247862",
+      "modified": 1576232911115,
+      "created": 1570202143483,
+      "name": "local dispatcher",
+      "data": {
+        "access_url": "http://api.112ua.io/api/oauth/token",
+        "client": 2,
+        "domain": "https://api.112ua.io",
+        "password": "aA123123123",
+        "token": "HgVocxGH4FINpaBv4vLg9A2e4LzyiGpN4GbS3Nyj",
+        "username": "dispatcher@gmail.com"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "domain",
+          "username",
+          "password",
+          "access_url",
+          "client",
+          "token"
+        ]
+      },
+      "color": "#0005ff",
+      "isPrivate": false,
+      "metaSortKey": 1,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_ffd191faf6494d0883f9bec191c49dba",
+      "parentId": "env_5c50543cd0b94fb7a547963708247862",
+      "modified": 1573813582892,
+      "created": 1570600869035,
+      "name": "production dispatcher",
+      "data": {
+        "access_url": "https://api.accessibility.com.ua/api/oauth/token",
+        "client": 2,
+        "domain": "https://api.accessibility.com.ua",
+        "password": "7SaMDHtDek",
+        "token": "HgVocxGH4FINpaBv4vLg9A2e4LzyiGpN4GbS3Nyj",
+        "username": "jabo@nixemail.net"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "domain",
+          "username",
+          "password",
+          "access_url",
+          "client",
+          "token"
+        ]
+      },
+      "color": "#cb69bc",
+      "isPrivate": false,
+      "metaSortKey": 4,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_f997c30116a24235b7b0eb4dddd1a640",
+      "parentId": "env_5c50543cd0b94fb7a547963708247862",
+      "modified": 1573813582900,
+      "created": 1570720227214,
+      "name": "production tourist 3",
+      "data": {
+        "access_url": "https://api.accessibility.com.ua/api/oauth/token",
+        "client": 2,
+        "domain": "https://api.accessibility.com.ua",
+        "password": "QJaQUI4UAl",
+        "token": "HgVocxGH4FINpaBv4vLg9A2e4LzyiGpN4GbS3Nyj",
+        "username": "shapoval.webdev@gmail.com"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "domain",
+          "username",
+          "password",
+          "access_url",
+          "client",
+          "token"
+        ]
+      },
+      "color": "#ffee00",
+      "isPrivate": false,
+      "metaSortKey": 7,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_c37d7b6d5a304698b655d3764d4363a7",
+      "parentId": "env_5c50543cd0b94fb7a547963708247862",
+      "modified": 1576266703795,
+      "created": 1576266692389,
+      "name": "New Environment",
+      "data": {
+        "access_url": "http://api.112ua.io/api/oauth/token",
+        "client": 2,
+        "domain": "https://api.112ua.io",
+        "password": "123123123",
+        "token": "HgVocxGH4FINpaBv4vLg9A2e4LzyiGpN4GbS3Nyj",
+        "username": "380959240423"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "domain",
+          "username",
+          "password",
+          "access_url",
+          "client",
+          "token"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1576266692389,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_5b5715c9cb654bd6b7e85d6d37d6db8a",
+      "parentId": "env_5c50543cd0b94fb7a547963708247862",
+      "modified": 1605286768284,
+      "created": 1576510387093,
+      "name": "test rourist 1",
+      "data": {
+        "domain": "https://dev.api.accessibility.com.ua",
+        "username": "tourist@gmail.com",
+        "password": "aA123123123",
+        "access_url": "https://dev.api.accessibility.com.ua/api/oauth/token",
+        "client": 2,
+        "token": "HgVocxGH4FINpaBv4vLg9A2e4LzyiGpN4GbS3Nyj"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "domain",
+          "username",
+          "password",
+          "access_url",
+          "client",
+          "token"
+        ]
+      },
+      "color": "#3400ff",
+      "isPrivate": false,
+      "metaSortKey": 1576510387093,
+      "_type": "environment"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+
+/*************** AUTH *****************/
+export { default as ForgottenCodeScreen } from './auth/ForgottenCodeScreen'
+export { default as ForgottenPasswordScreen } from './auth/ForgottenPasswordScreen'
+export { default as LoginScreen } from './auth/LoginScreen'
+export { default as PasswordCompleteScreen } from './auth/PasswordCompleteScreen'
+export { default as PasswordNewScreen } from './auth/PasswordNewScreen'
+export { default as RegistrationCodeScreen } from './auth/RegistrationCodeScreen'
+export { default as RegistrationScreen } from './auth/RegistrationScreen'
+export { default as RegistrationStartScreen } from './auth/RegistrationStartScreen'
+export { default as RegistrationStep1Screen } from './auth/RegistrationStep1Screen'
+export { default as RegistrationStep2Screen } from './auth/RegistrationStep2Screen'
+export { default as RegistrationStep3Screen } from './auth/RegistrationStep3Screen'
+export { default as RegistrationStep4Screen } from './auth/RegistrationStep4Screen'
+export { default as StartInfoScreen } from './auth/StartInfoScreen'
+export { default as StartLangScreen } from './auth/StartLangScreen'
+export { default as StartSecurScreen } from './auth/StartSecurScreen'
+
+/*************** ALARM *****************/
+export { default as AlarmAmbulanceScreen } from './alarm/AlarmAmbulanceScreen'
+export { default as AlarmAmbulanceTextScreen } from './alarm/AlarmAmbulanceTextScreen'
+export { default as AlarmVirusTextScreen } from './alarm/AlarmVirusTextScreen'
+export { default as AlarmStartScreen } from './alarm/AlarmStartScreen'
+export { default as SosNormalModeScreen } from './alarm/SosNormalModeScreen'
+export { default as SosQuietModeScreen } from './alarm/SosQuietModeScreen'
+export { default as SosScreen } from './alarm/SosScreen'
+
+/*************** USER *****************/
+export { default as AppInstructionScreen } from './user/AppInstructionScreen'
+export { default as ChangePassScreen } from './user/ChangePassScreen'
+export { default as ChangeProfileScreen } from './user/ChangeProfileScreen'
+export { default as CityInfoScreen } from './user/CityInfoScreen'
+export { default as HotKeyScreen } from './user/HotKeyScreen'
+export { default as MedicalDataScreen } from './user/MedicalDataScreen'
+export { default as SimpleModeScreen } from './user/SimpleModeScreen'
+export { default as SupportScreen } from './user/SupportScreen'
+export { default as SwitchLangScreen } from './user/SwitchLangScreen'
+export { default as UserCatalogScreen } from './user/UserCatalogScreen'
+export { default as UserInfoScreen } from './user/UserInfoScreen'
+export { default as UserNotificationsScreen } from './user/UserNotificationsScreen'
+export { default as UserProfileScreen } from './user/UserProfileScreen'
+export { default as UserRequestsScreen } from './user/UserRequestsScreen'
+export { default as UserSettingsScreen } from './user/UserSettingsScreen'
+export { default as UserStartScreen } from './user/UserStartScreen'
+
+
